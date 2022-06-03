@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Dictionary API</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <form class="searchForm">
+            <img class="logoic" src="images/book.png" style=" width:100px; height:75px;">
+            <h1>Dictionary API</h1>
+            <input type="search" name="searchBox" id="searchBox" placeholder="Search for a word..." style="font-family: 'Karla', sans-serif">
+            </br>
+            <input type="button" name="submit" value="SEARCH" style="font-family: 'Montserrat', sans-serif" onclick="wordSearch()">  
+            <input type="reset" value="RESET" style="font-family: 'Montserrat', sans-serif" onclick="reloadPage()">
+        </form>
+
+        <div class="alert" id="alert">
+        <h2>Scroll down for definition!</h2>
+        <img class="arrowic" src="images/arrow.png" style=" width:40px; height:40px;">
+        </div>
+        
+        <div class="searchResult" id="searchResult">
+            <div>
+                <h1>Word</h1>
+                <p id="word"></p>
+            </div>
+            <div>
+                <h1>Definition</h1>
+                <p id="definition"></p>
+            </div>
+            <div>
+                <h1>Example</h1>
+                <p id="example"></p>
+            </div>
+            <div>
+                <h1>Pronounciation</h1>
+                <p id="spell"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
